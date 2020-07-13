@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 100%;
+}
+body {
+  font-family: sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.hide {
+  display: none;
+}
+.section {
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+  border-radius: 2rem;
+}
+/* container to ensure equal left and right margin */
+.container {
+  width: 80%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 36em) {
+  .container {
+    max-width: 54rem;
+  }
+}
+@media (min-width: 48em) {
+  .container {
+    max-width: 72rem;
+  }
+}
+@media (min-width: 62em) {
+  .container {
+    max-width: 96rem;
+  }
+}
+@media (min-width: 75em) {
+  .container {
+    max-width: 114rem;
+  }
+}
+/* ***container ends**** */
+
+/* ***landingpage begins**** */
+.landing_page {
+  background-color: #111111;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+.logo {
+  width: 12%;
+}
+.logo img {
+  width: 100%;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  align-items: center;
+  width: 80%;
+}
+.nav-btn {
+  padding: 0.5rem 0;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+.nav-btn a {
+  color: #fff;
+  font-size: 0.8rem;
+  transition: 0.25s;
+}
+.nav-btn a:hover {
+  color: #f46632;
+}
+
+#register {
+  margin-left: 6%;
+  padding: 0.5rem 1rem;
+  background-color: #292929;
+  border-radius: 3rem;
+}
+
+.hamburger {
+  display: none;
+  height: 3px;
+  width: 20px;
+  background-color: #fff;
+  position: relative;
+}
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+}
+
+.hamburger::before {
+  top: 6px;
+  left: 0;
+}
+.hamburger::after {
+  bottom: 6px;
+  left: 0;
+}
+
+/* landing page content begins */
+.landing_page_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  padding: 3rem 1rem;
+  z-index: 10;
+  position: relative;
+}
+.landing_page_text .landing_page_image {
+  display: none;
+}
+.landing_page_image {
+  width: 34%;
+}
+
+.landing_page_image img {
+  height: 100%;
+  width: 100%;
+}
+.landing_page_title {
+  font-size: 1.8rem;
+}
+.landing_page_text {
+  width: 40%;
+}
+
+.landing_page_description {
+  font-size: 0.9rem;
+  line-height: 2.5rem;
+  margin-bottom: 10%;
+}
+.landing_page_subtitle {
+  background-image: url(../images/landingpage/UI_UX.png);
+  height: 4.5rem;
+  background-size: contain;
+  padding-top: 1rem;
+  font-size: 1.4rem;
+  color: #b9b9b9;
+  font-weight: lighter;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-top: -0.5rem;
+}
+
+.landing_page_start {
+  background-color: #f46632;
+  color: #fff;
+  border: 1px solid #f46632;
+  padding: 0.8rem 4rem;
+  text-align: center;
+  font-size: 0.9rem;
+  width: 70%;
+  border-radius: 0.8rem;
+  transition: 0.5s;
+}
+
+.landing_page_start:hover {
+  background-color: #fff;
+  border: 1px solid #f46632;
+  color: #f46632;
+}
+
+/* landing page content ends */
+
+/*  About us begins */
+.about_us {
+  margin-top: -6rem;
+  padding: 11rem 0;
+  background-color: #fafafa;
+  height: 120vh;
+}
+
+.about_us_top {
+  margin: 0 auto;
+  width: 91.4%;
+  /* margin-left: 2rem; */
+}
+.about_us_top img {
+  width: 50%;
+  margin-left: 2.5rem;
+}
+.about_us_bottom {
+  padding: 3rem;
+  background-color: #fff;
+  margin-top: -8rem;
+}
+.about_us_bottoma {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.about_us_subtitle {
+  position: relative;
+  width: 40%;
+  line-height: 4rem;
+}
+.about_us_subtitle::before {
+  content: "About";
+  transform: translate(15%, -15%);
+}
+.subtitle::before {
+  height: 100%;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #f2f2f2;
+  position: absolute;
+  transform: translate(42%, -12%);
+}
+.subtitle_text {
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+.social_icons {
+  width: 10%;
+}
+.about_us_bottomb {
+  margin: 10% auto 0;
+  width: 91.4%;
+}
+.about_us_bottomb_text {
+  font-size: 0.9rem;
+  line-height: 2.5rem;
+}
+/*  About us ends */
+
+/*  Experience begins */
+.experience_content{
+  background-color: #fff;
+  margin-top: -15rem;
+  padding: 3rem;
+}
+ .experience_subtitle{
+  position: relative;
+  height: 4rem;
+  line-height: 4rem;
+}
+
+.experience_subtitle::before {
+  content: "Experience";
+}
+.experience_tabs{
+  display: flex;
+  justify-content: center;
+} 
+.experience_tabs .tab{
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: .5rem 1rem;
+  font-size: 0.9rem;
+  color: #000;
+  margin-top: 2rem;
+  transition: .25s;
+}
+.experience_tabs .tab:hover, .experience_tabs .tab:active{
+  background-color: black;
+  color: #fff;
+}
+.experience_tabs .first{
+  border-top-left-radius: .4rem;
+  border-bottom-left-radius: .4rem;
+  border-left: 1px solid #000;
+}
+.experience_tabs .third{
+  border-top-right-radius: .4rem;
+  border-bottom-right-radius: .4rem;
+  border-right: 1px solid #000;
+}
+.experience_tabs .second{
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+.experience_bottom{
+  display: flex;
+  margin-top: 2rem;
+}
+.experience_image img{
+  width: 100%;
+}
+.experience_text {
+  font-size: 0.9rem;
+  line-height: 2.5rem;
+  width: 65%;
+}
+/*  Experience ends */
+
+/*      ****RESPONSIVENESS****      */
+/* tablet */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .landing_page_text {
+    width: 54%;
+  }
+
+  .about_us_top {
+    margin-left: 2rem;
+  }
+  .about_us_top img {
+    margin-left: 2.5%;
+  }
+  .about_us_subtitle {
+    width: 30%;
+  }
+  .subtitle::before {
+    font-size: 3rem;
+    }
+  .about_us_bottomb {
+    margin: 10% 0;
+  }
+
+}
+/* tablet ends */
+/* mobile */
+@media (max-width: 576px) {
+  .landing_page_content {
+    justify-content: center;
+  }
+  .landing_page_image {
+    display: none;
+  }
+  .landing_page_text {
+    width: 80%;
+    text-align: center;
+  }
+  .landing_page_text .landing_page_image {
+    display: block;
+    width: 80%;
+    margin: 2rem auto;
+  }
+  .landing_page_start {
+    padding: 0.8rem 3rem;
+  }
+  .about_us_top img{
+    width: 90%;
+    margin: 0;
+}
+  .about_us_bottom{
+    margin-top: -5rem;
+    padding: 6rem 2rem;
+  }
+  .about_us_subtitle {
+    width: 80%;
+  }
+  .subtitle::before{
+    transform: translate(-12%, -10%);
+  }
+
+  .experience_content {
+    margin-top: -5rem;
+    padding: 3rem 2rem;
+
+}
+
+
+/* xsmall screens */
+@media (max-width: 411px) {
+  .landing_page_title {
+    font-size: 1.4rem;
+  }
+  .landing_page_subtitle {
+    font-size: 1rem;
+    height: 3.5rem;
+  }
+  .landing_page_start {
+    padding: 0.8rem 2rem;
+  }
+}
+/* mobile ends */
