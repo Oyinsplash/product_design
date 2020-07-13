@@ -249,12 +249,12 @@ header {
 /*  About us ends */
 
 /*  Experience begins */
-.experience_content{
+.experience_content {
   background-color: #fff;
   margin-top: -15rem;
   padding: 3rem;
 }
- .experience_subtitle{
+.experience_subtitle {
   position: relative;
   height: 4rem;
   line-height: 4rem;
@@ -263,42 +263,43 @@ header {
 .experience_subtitle::before {
   content: "Experience";
 }
-.experience_tabs{
+.experience_tabs {
   display: flex;
   justify-content: center;
-} 
-.experience_tabs .tab{
+}
+.experience_tabs .tab {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   font-size: 0.9rem;
   color: #000;
   margin-top: 2rem;
-  transition: .25s;
+  transition: 0.25s;
 }
-.experience_tabs .tab:hover, .experience_tabs .tab:active{
+.experience_tabs .tab:hover,
+.experience_tabs .tab:active {
   background-color: black;
   color: #fff;
 }
-.experience_tabs .first{
-  border-top-left-radius: .4rem;
-  border-bottom-left-radius: .4rem;
+.experience_tabs .first {
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
   border-left: 1px solid #000;
 }
-.experience_tabs .third{
-  border-top-right-radius: .4rem;
-  border-bottom-right-radius: .4rem;
+.experience_tabs .third {
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
   border-right: 1px solid #000;
 }
-.experience_tabs .second{
+.experience_tabs .second {
   border-left: 1px solid #000;
   border-right: 1px solid #000;
 }
-.experience_bottom{
+.experience_bottom {
   display: flex;
   margin-top: 2rem;
 }
-.experience_image img{
+.experience_image img {
   width: 100%;
 }
 .experience_text {
@@ -332,11 +333,10 @@ header {
   }
   .subtitle::before {
     font-size: 3rem;
-    }
+  }
   .about_us_bottomb {
     margin: 10% 0;
   }
-
 }
 /* tablet ends */
 /* mobile */
@@ -359,27 +359,61 @@ header {
   .landing_page_start {
     padding: 0.8rem 3rem;
   }
-  .about_us_top img{
+  .about_us_top img {
     width: 90%;
     margin: 0;
-}
-  .about_us_bottom{
+  }
+  .about_us_bottom {
     margin-top: -5rem;
     padding: 6rem 2rem;
   }
   .about_us_subtitle {
     width: 80%;
   }
-  .subtitle::before{
+  .subtitle::before {
     transform: translate(-12%, -10%);
+    font-size: 3rem;
   }
-
   .experience_content {
     margin-top: -5rem;
     padding: 3rem 2rem;
-
+  }
+  .experience_tabs {
+    flex-direction: column;
+    /* text-align: center; */
+  }
+  .subtitle::before {
+    transform: translate(-3%, -10%);
+    font-size: 2.5rem;
+  }
+  .experience_bottom {
+    flex-direction: column;
+  }
+  .experience_text {
+    font-size: 0.9rem;
+    line-height: 2.5rem;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .experience_tabs .first {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 1rem;
+    border-right: 1px solid #000;
+    margin-bottom: -2rem;
+  }
+  .experience_tabs .second {
+    margin-bottom: -2rem;
+    border-bottom: 0;
+    border-top: 0;
+  }
+  .experience_tabs .third {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 0;
+    border-left: 1px solid #000;
+  }
 }
-
 
 /* xsmall screens */
 @media (max-width: 411px) {
@@ -392,6 +426,10 @@ header {
   }
   .landing_page_start {
     padding: 0.8rem 2rem;
+  }
+
+  .subtitle::before {
+    transform: translate(-11%, -10%);
   }
 }
 /* mobile ends */
