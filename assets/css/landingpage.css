@@ -249,10 +249,15 @@ header {
 /*  About us ends */
 
 /*  Experience begins */
+/* .experience {
+  height: 120vh;
+} */
 .experience_content {
   background-color: #fff;
-  margin-top: -15rem;
+  margin: 6rem 0;
   padding: 3rem;
+  position: relative;
+  z-index: 3;
 }
 .experience_subtitle {
   position: relative;
@@ -309,6 +314,50 @@ header {
 }
 /*  Experience ends */
 
+/*  Sessions begins */
+.sessions_subtitle::before {
+  content: "Sessions";
+}
+/*  Sessions ends */
+/*  Masters begins */
+.masters {
+  padding: 18rem 0;
+  background-color: #fff;
+}
+.masters_subtitle {
+  position: relative;
+  height: 4rem;
+  line-height: 4rem;
+}
+.masters_subtitle::before {
+  content: "Masters";
+  /* top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%); */
+  transform: translate(72%, -8%);
+}
+.masters_content {
+  padding: 3rem;
+}
+.masters_info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.master {
+  width: 17%;
+  margin: 1rem 0;
+}
+.master_image,
+.master_image img {
+  width: 100%;
+}
+/* .master_image .increase img{
+  width: 200%;
+} */
+
+/*  Masters ends */
+
 /*      ****RESPONSIVENESS****      */
 /* tablet */
 @media (max-width: 768px) {
@@ -336,6 +385,27 @@ header {
   }
   .about_us_bottomb {
     margin: 10% 0;
+  }
+
+  .sessions_section_top {
+    display: flex;
+  }
+  .sessions_section_top-left {
+    width: 30%;
+  }
+  .sessions_section_top-left {
+    width: 60%;
+    display: flex;
+  }
+  .master {
+    width: 28%;
+  }
+  .master_name {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .master_position {
+    font-size: 0.7rem;
   }
 }
 /* tablet ends */
@@ -412,6 +482,16 @@ header {
     border-bottom-right-radius: 1rem;
     border-top-right-radius: 0;
     border-left: 1px solid #000;
+  }
+
+  .masters_content {
+    margin-top: 16rem;
+  }
+  .masters_info {
+    justify-content: center;
+  }
+  .master {
+    width: 80%;
   }
 }
 
